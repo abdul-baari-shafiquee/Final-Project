@@ -1,60 +1,12 @@
-* {
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f0c29;
+    color: white;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-    color: #fff;
-    padding: 1rem 20vw;
-    font-family: 'Poppins', sans-serif;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    background: url('/Assets/logo.png') no-repeat center;
-    background-size: cover;
-    width: 70px;
-    height: 70px;
-}
-
-.left a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.right ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 1rem;
-}
-
-.right ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    transition: background 0.3s, transform 0.3s;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-}
-
-.main-bg {
+/* HOME-PAGE */
+.main-bg{
     height: 100vh;
     width: auto;
     background-image: url('Assets/bg-img.png');
@@ -64,7 +16,6 @@ nav {
     overflow-x: hidden;
     position: relative;
 }
-
 .main-bg .cta {
     position: absolute;
     top: 70%;
@@ -79,8 +30,20 @@ nav {
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
 }
-
-.main-bg .cta a {
+.main-bg .cta a{
     text-decoration: none;
     color: #fff;
+}
+.main-bg button:hover {
+    background: rgba(48, 43, 99, 0.7);
+    transform: translate(-50%, -50%) scale(1.05);
+    border: 1px solid white;
+}
+.head{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
