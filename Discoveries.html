@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/Assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Discoveries | AstroSpace</title>
+    <style>
+.currenttt {
+  position: relative;
+  background-color:rgba(255, 255, 255, 0.2);
+  color: #1a162f !important;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.currenttt::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(1); /* Directly show the line */
+  width: 60%;
+  height: 3px;
+  background-color: white;
+  color: aqua;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+</style>
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <header class="disc-head head">Discoveries</header>
+    <main class="disc-container">
+        <section class="disc-section">
+            <h2 class="disc-title">Latest Discoveries</h2>
+            <div class="disc-grid">
+                <div class="disc-item">
+                    <h3 class="disc-item-title">James Webb Captures Exoplanet Atmosphere</h3>
+                    <p class="disc-item-date">December 2024</p>
+                    <p class="disc-item-desc">First images of exoplanet atmospheres show water vapor and clouds, a
+                        breakthrough in space exploration.</p>
+                </div>
+                <div class="disc-item">
+                    <h3 class="disc-item-title">Gravitational Waves Detected from Black Hole Merger</h3>
+                    <p class="disc-item-date">March 2025</p>
+                    <p class="disc-item-desc">Scientists observed gravitational waves from a supermassive black hole
+                        merger, reshaping our understanding of the cosmos.</p>
+                </div>
+                <div class="disc-item">
+                    <h3 class="disc-item-title">Phosphine Gas on Venus</h3>
+                    <p class="disc-item-date">April 2025</p>
+                    <p class="disc-item-desc">Discovery of phosphine in Venus’ atmosphere hints at possible signs of
+                        life.</p>
+                </div>
+            </div>
+        </section>
+        <section class="disc-section">
+            <h2 class="disc-title">Milestone Discoveries</h2>
+            <div class="disc-grid">
+                <div class="disc-item">
+                    <h3 class="disc-item-title">Hubble Confirms Universe is Expanding</h3>
+                    <p class="disc-item-date">1929</p>
+                    <p class="disc-item-desc">Hubble’s discovery revolutionized cosmology, confirming the universe is
+                        expanding.</p>
+                </div>
+                <div class="disc-item">
+                    <h3 class="disc-item-title">First Exoplanet Discovered</h3>
+                    <p class="disc-item-date">1995</p>
+                    <p class="disc-item-desc">Discovery of 51 Pegasi b marked the dawn of exoplanet research.</p>
+                </div>
+            </div>
+        </section>
+        <section class="disc-section">
+            <h2 class="disc-title">Gallery</h2>
+            <div class="disc-gallery">
+                <img src="/Assets/Space-Telescope.jpg" alt="Space Telescope" class="disc-gallery-img">
+                <img src="/Assets/Galaxy.jpg" alt="Galaxy" class="disc-gallery-img">
+                <img src="/Assets/Black-Hole.jpg" alt="Black Hole" class="disc-gallery-img">
+            </div>
+        </section>
+    </main>
+    <footer class="disc-footer">
+        <p>&copy; 2025 AstroSpace. <a href="/homepage.html" class="disc-link">Back to Home</a></p>
+    </footer>
+    <script src="nav-script.js"></script>
+</body>
+
+</html>
